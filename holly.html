@@ -1,0 +1,103 @@
+<html>
+<body style="background-color:PowderBlue;">
+<h1 id ="ans"></h1>
+<style>
+tr:hover {background-color: #f5f5f5;}
+td{ height: 40px; font-size:30px;}
+th {height: 50px; font-size:30px; color:Tomato;}
+b{color: blue; font-size:20px;}
+#butto {
+
+    width: 4em;
+    border: 2px solid green;
+    background: #ffe;
+    border-radius: 5px;
+}
+a {
+    display: block;
+    width: 90%;
+    line-height: 1em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2px;
+}
+a:hover {
+    color: red;
+    background: #eff;
+}
+
+
+</style>
+<br><br><br><br><br><br>
+<table align='center'>
+<tr>
+<th>Movies</th>
+<th>Number of Seats</th>
+</tr>
+
+<tr>
+<td><b>Army of the Dead</b></td>
+<td><input type="text"  size=20 placeholder="Count" id="hm1"></td>
+</tr>
+
+<tr>
+<td><b>Eternals</b></td>
+<td><input type="text" size=20 placeholder="Count" id="hm1"></td>
+</tr>
+
+<tr>
+<td><b>Cruella</b></td>
+<td><input type="text" size=20 placeholder="Count" id="hm1"></td>
+</tr>
+
+<tr>
+<td><b>Wrath of Man</b></td>
+<td><input type="text" size=20 placeholder="Count" id="hm1"></td>
+</tr>
+
+<tr>
+<td><b>F9: The Fast Saga</b></td>
+<td><input type="text" size=20 placeholder="Count" id="hm1"></td>
+</tr>
+
+<tr>
+<td><b>Last Night in Soho</b></td>
+<td><input type="text"  size=20 placeholder="Count" id="hm1"></td>
+</tr>
+
+<tr>
+<td><b>The Woman in the Window</b></td>
+<td><input type="text" name="username" size=20 placeholder="Count" id="hm1"></td>
+</tr>
+
+<tr>
+<td><b>Those Who Wish Me Dead</b></td>
+<td><input type="text" size=20 placeholder="Count" id="hm1"></td>
+</tr>
+</table>
+
+<table align='center'>
+<tr>
+<td><div id="butto" style = " top:250px "><a href="second.html">Back</a></div></td>
+
+<td><button style = " top:250px; width=450; padding: 8px 55px;" id="butto" onclick="check()">Submit</button></td>
+
+<td><div id="butto" style = " top:250px "><a href="afterlogout.html">Logout</a></div></td>
+</tr></table>
+
+
+<script>
+function check(){
+var f = document.getElementById("hm1").value;
+if(f>4){
+document.getElementById("ans").innerHTML = "Limited Seats! Book maximum of FOUR!!!";
+}
+else{
+document.getElementById("ans").innerHTML = "Recorded your Response!!!";
+}
+}
+</script>
+
+
+</body>
+</html>
